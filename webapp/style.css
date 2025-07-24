@@ -1,0 +1,174 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 04-Apr-2025, 12:57:18 am
+    Author     : hp
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #330033;
+    font-family: sans-serif;
+}
+
+/* Not Found Message */
+.notFound {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Search Box */
+.searchBox {
+    max-width: 600px;
+    /*background: #c83232;*/
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 4px 0 0 4px; /* Corrected radius */
+    border: 1px solid rgb(228, 69, 69);
+    font-size: 1rem;
+    outline: none;
+}
+
+.searchBox button {
+    padding: 12px 20px;
+    background: #ff0000; /* Red background */
+    border: 1px solid #cc0000; /* Darker red border */
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.searchBox button:hover {
+    background: #cc0000; /* Darker red on hover */
+}
+
+/* Container */
+.container {
+    width: 100%;
+    padding: 50px 20px;
+    background: url('image/heading2.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.container h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ff0033;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #330033;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.recipe-card {
+    width: 200px;
+    height:300px;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recipe-card button {
+    padding: 4px 10px;
+    background: #00cc33;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.popup-card {
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    z-index: 10;
+    border: 2px solid #c83232;
+    display: none;
+    overflow-y: auto;
+    
+}
+
+.popup-card h3 {
+    font-size: 22px;
+    color: #0099cc;
+    font-weight: bold;
+    text-align: left;
+}
+
+#recipeDetails {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: #ff3333;
+    padding: 4px;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}

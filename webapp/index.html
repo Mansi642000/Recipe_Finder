@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Finder</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale-1.0">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+          <h2>Recipe Finder</h2>
+          <p>Search mouth watering recipes to satisfy your craving.</p>
+         <div class="searchBox">
+            <input type="text" placeholder="Search for recipes" id="searchInput">
+            <button onclick="searchRecipes()">Search</button>
+         </div>
+        </div>
+          
+        <div class ="recipes" id="recipes"></div>
+        <div class="notFound" id="notFound">Search your favorite recipes!</div>
+            <div class="popup-card" id="popupCard">
+                <button class="close-btn" onclick="closeRecipe()" >Close</button>
+                <h3 id="recipeTitle"></h3>
+                <p id="recipeDetails"></p>
+            </div>
+        <script src="script.js"></script> 
+    </body>
+</html>
