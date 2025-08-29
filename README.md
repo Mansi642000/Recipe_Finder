@@ -26,3 +26,5 @@ Searching
 
 <img width="1920" height="1080" alt="Screenshot 2025-07-24 202712" src="https://github.com/user-attachments/assets/a5c4cedb-2523-4e01-8f92-e1570a9e6b11" />
 
+Results
+https://github.com/Mansi642000/Recipe_Finder/blob/main/webapp/images/Screenshot%202025-08-29%20160941.png
